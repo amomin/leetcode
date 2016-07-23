@@ -1,4 +1,4 @@
-package largestDivisisbleSubset;
+package largestDivisibleSubset;
 
 import java.util.List;
 

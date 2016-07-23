@@ -9,8 +9,8 @@ These are some solutions to problems from Leetcode.  They are usually not the be
 |[Max Sum Of Rectangle](src/maxSumSubmatrix/Solution.java)|July 13|Hard|
 |[Reverse Vowels of String](src/reverseVowelsOfString/Solution.java)|July 14|Easy|
 |[Intersection of Two Arrays](src/intersectionOfTwoArrays/Solution.java)|July 14|Easy|
-|[Powers of Four](src/powersOfFour/Solution.java)|July 15|Easy|
-|[Water Jug Problem](src/waterAndJugProblem/Solution.java)|July 18|Medium|
+|[Powers of Four](src/powerOfFour/Solution.java)|July 15|Easy|
+|[Water Jug Problem](src/waterAndJugProblem/GCDSolution.java)|July 18|Medium|
 |[Valid Perfect Square](src/validPerfectSquare/Solution.java)|July 18|Medium|
 |[Largest Divisible Subset](src/largestDivisibleSubset/Solution.java)|July 19|Medium|
 |[Product of Array Except Self](src/productOfArrayExceptSelf/Solution.java)|July 21|Medium|

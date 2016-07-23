@@ -55,4 +55,4 @@
  * @author user
  *
  */
-package largestDivisisbleSubset;
+package largestDivisibleSubset;
