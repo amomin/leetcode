@@ -15,5 +15,6 @@ These are some solutions to problems from Leetcode.  They are usually not the be
 |Largest Divisible Subset|July 19|Medium|
 |Product of Array Except Self|July 21|Medium|
 |Count Numbers With Unique Digits|July 22|Medium|
+|Pascal's Triangle 1|July 23|Easy|
 
 
