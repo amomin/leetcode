@@ -16,5 +16,6 @@ These are some solutions to problems from Leetcode.  They are usually not the be
 |[Product of Array Except Self](src/productOfArrayExceptSelf/Solution.java)|July 21|Medium|
 |[Count Numbers With Unique Digits](src/countNumbersWithUniqueDigits/Solution.java)|July 22|Medium|
 |[Pascal's Triangle 1](src/pascalsTriangle1/Solution.java)|July 23|Easy|
+|[Integer Break](src/integerBreak/Solution.java)|July 23|Medium|
 
 
