@@ -9,7 +9,7 @@ public class Solution {
     /**
      * Grade school addition
      **/
-    private int addViaBitShift(int a, int b) {
+    protected int addViaBitShift(int a, int b) {
         int sum = 0;
         int carry = 0;
         int dPlace = 1;
@@ -40,6 +40,7 @@ public class Solution {
     	// we could write this as a loop on the condition while (b != 0)
     	return s2(xr, cry);
     }
+    
     public int getSum(int a, int b) {
         return s2(a, b);
     }

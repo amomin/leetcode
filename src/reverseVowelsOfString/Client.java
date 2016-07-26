@@ -3,8 +3,7 @@ package reverseVowelsOfString;
 public class Client {
 
 	public static void prtChars() {
-		// TODO Auto-generated method stub
-		char x = (char) 65;
+		//char x = (char) 65;
 		System.out.println((int) 'a');
 		System.out.println((int) 'e');
 		System.out.println((int) 'i');

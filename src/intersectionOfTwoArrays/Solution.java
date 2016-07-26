@@ -26,7 +26,7 @@ public class Solution implements ISolution {
 	// the HashSet once found.  This reduces space to O(n).
     
     private int[] hashSetMethod(int[] nums1, int[] nums2) {
-        HashSet s = new HashSet<Integer>();
+        HashSet<Integer> s = new HashSet<Integer>();
         for (Integer i : nums1) {
             if (!s.contains(i)) s.add(i);
         }
