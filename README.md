@@ -18,5 +18,6 @@ These are some solutions to problems from Leetcode.  They are usually not the be
 |[Pascal's Triangle 1](src/pascalsTriangle1/Solution.java)|July 23|Easy|
 |[Integer Break](src/integerBreak/Solution.java)|July 26|Medium|
 |[Sort List](src/sortList/Solution.java)|July 27|Medium|
+|[Insertion Sort List](src/insertionListSort/Solution.java)|July 28|Medium|
 
 
