@@ -10,6 +10,32 @@ package insertionListSort;
 public class Solution {
     ListNode iPointer, secondHalfPointer, jPointer;
    
+    /**
+     * The iPointer represents the element *before* the index "i" we are currently processing.
+     * The strategy is to remove i to split the list into two halves.  The invariant is that the
+     * first half is sorted, and on each iteration it grows by (at least) one.
+     * 
+     * Let: 
+     *      i                   = secondHalfPointer
+     *      secondHalfPointer   = i.next;
+     *      i.next              = null (not strictly necessary)
+     * 
+     * head -> ... -> iPointer -> (null)        // Not strictly necessary to point iPointer -> null, but it may simplify thinking to image this.
+     * i -> (null)                              // Similarly.
+     * secondHalfPointer -> ... -> null
+     * 
+     * We insert i in the correct position in the first half.  To simplify the logic, we first check
+     * if this is even necessary: if iPointer.val < i.val, it is in the correct location, so append i to the first half
+     * and continue.
+     * Otherwise, we insert it (see the insert method), and iPointer is the last element in the linked list.  So on the next
+     * iteration, the invariant holds and the above structure is also true.
+     * 
+     * In the end, we do not need to create the variable "i", nor do we have to strictly separate the two linked lists (i.e. everything
+     * works even if we don't nullify iPointer.next).
+     * 
+     * @param head
+     * @return
+     */
     public ListNode insertionSortList(ListNode head) {
         if (head == null || head.next == null) return head;
 

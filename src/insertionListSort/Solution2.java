@@ -1,6 +1,17 @@
 package insertionListSort;
 
-/** This one is actually slightly slower than Solution
+/** This one is actually gets a slower score from the Leetcode timer - 6ms.
+ * 
+ * The overall strategy is the same but tries to make the first half/second half distinction a 
+ * little clearer.  The main thing is that you need quick access to the following things:
+ * 
+ * 1. Head of the list
+ * 2. The tail of the first half of the list
+ * 3. The current item (i)
+ * 4. The head of the second half of the list.
+ * 
+ * With some planning you can probably merge some some of these pointers (2,3 and 4 are consecutive at the outset, but
+ * you have to take care not to lose a pointer when inserting "i" into the middle of the first half).
  * 
  * @author user
  *
