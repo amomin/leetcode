@@ -20,6 +20,6 @@ These are some solutions to problems from Leetcode.  They are usually not the be
 |[Sort List](src/sortList/Solution.java)|July 27|Medium||
 |[Insertion Sort List](src/insertionListSort/Solution.java)|July 28|Medium||
 |[Linked List Cycle](src/linkedListCycle/Solution.java)|July 28|Easy||
-|[Pascal's Triangle 1](src/pascalsTriangle2/Solution.java)|August 1|Easy|[A second solution](src/pascalsTriangle2/Solution.java) which should run twice as fast.|
-|[Pascal's Triangle 1](src/trianle/Solution3.java)|August 1|Medium|[Based on this solution](src/triangle/Solution.java).|
+|[Pascal's Triangle II](src/pascalsTriangle2/Solution1.java)|August 1|Easy|[A second solution](src/pascalsTriangle2/Solution2.java) which should run twice as fast.|
+|[Triangle](src/trianle/Solution3.java)|August 1|Medium|[Based on this solution](src/triangle/Solution.java).|
 
