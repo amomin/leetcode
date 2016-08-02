@@ -22,4 +22,6 @@ These are some solutions to problems from Leetcode.  They are usually not the be
 |[Linked List Cycle](src/linkedListCycle/Solution.java)|July 28|Easy||
 |[Pascal's Triangle II](src/pascalsTriangle2/Solution1.java)|August 1|Easy|[A second solution](src/pascalsTriangle2/Solution2.java) which should run twice as fast.|
 |[Triangle](src/triangle/Solution3.java)|August 1|Medium|[Based on this solution](src/triangle/Solution.java).|
+|[Intersection of Two Arrays 2](src/intersectionOfTwoArrays2/Solution.java)|August 1|Medium||
+|[H-Index 1](src/hIndex1/Solution.java)|August 1|Medium||
 
