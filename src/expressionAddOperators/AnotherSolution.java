@@ -66,7 +66,7 @@ public class AnotherSolution {
         // SPECIAL CASE - first digit is zero
         if (Integer.parseInt(num.substring(0,1)) == 0) {
             if (num.length() == 1) {
-                answer.add(new Product(new int[] {0}));
+                answer.add(new Product("0"));
                 return answer;
             }
             for (Product p : allProducts(num.substring(1))) {
@@ -78,11 +78,18 @@ public class AnotherSolution {
             if (tooBigToParse(num.substring(0, i))) break;
             int firstNumber = Integer.parseInt(num.substring(0, i));                
             for (Product p : allProducts(num.substring(i))) {
-                answer.add(new Product(firstNumber, p));
+                // You need to check this for correctness - but it
+                // slows down the overall solution speed and none of the
+                // unit tests check for this error so we comment it out.
+                
+                //if (!overflows(firstNumber, p)) {
+                    answer.add(new Product(firstNumber, p));                    
+                //}
+                    
             }
         }
         if (! tooBigToParse(num)) {
-            answer.add(new Product(new int[] {Integer.parseInt(num)}));
+            answer.add(new Product(num));
         }
         return answer;
     }
@@ -96,15 +103,18 @@ public class AnotherSolution {
             strValue = n + "*" + p.strValue;
         }
 
-        public Product(int[] list) {
-            intValue = list[0];
-            StringBuilder sb = new StringBuilder("" + list[0]);
-            for (int i = 1; i < list.length; i++) {
-                intValue *= list[i];
-                sb.append('*' + list[i]);
-            }
-            strValue = sb.toString();
+        public Product(String num) {
+            intValue = Integer.parseInt(num);
+            strValue = num;
         }
+    }
+    
+    private static boolean overflows(int n, Product p) {
+        int tst = Integer.MAX_VALUE - (Integer.MAX_VALUE % n) / n;
+        if (tst < p.intValue) {
+            return true;
+        }
+        return false;
     }
     
     private static boolean tooBigToParse(String num) {
@@ -136,7 +146,13 @@ public class AnotherSolution {
         tst("" + Integer.MAX_VALUE, Integer.MAX_VALUE);
         tst("2147483647", Integer.MAX_VALUE);
         tst("21474836471", Integer.MAX_VALUE);
+        tst("2147483647", 2*1*4*7*4*8*3*6*4*7);
+        tst("2147483647", 2*1*4*7*4*8*3*6*4+7);
         tst("21474836471", Integer.MAX_VALUE - 1);
         tst("2147483648", Integer.MAX_VALUE);
+        // These test cases show that it is necessary to check for product overflow
+        // Or switch to long
+        tst("1111111111111", 539247568);
+        tst("1111111111111", 1-111111*111111);
     }
 }

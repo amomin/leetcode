@@ -27,9 +27,17 @@ import java.util.List;
  * 1. When checking "products only" space of possible solutions, do so only if the 
  * target >= 0, otherwise this is useless bc we are multiplying non-negative integers.
  * 
+ * 2. Stop if product overflows
+ * 
+ * 3. Stop if the target we are trying to reach is too large - for example, for
+ * addOperators("12", 123)
+ * 
+ * 4. Integer parsing and string building is expensive - use character arrays
+ * (got this idea from the discussions).
+ * 
  * In any case, this is very much on the slow end of submitted solutions,
- * better than only 1.5% of submissions.  Is this actually worse than a
- * brute force solution?  We'll try that out as well.
+ * better than only 1.5% of submissions.  EDIT: see AnotherSolution.java
+ * for a significiant improvement using only ideas 1 and 2 above.
  * 
  * @author user
  *
