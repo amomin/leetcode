@@ -26,4 +26,4 @@ These are some solutions to problems from Leetcode.  They are usually not the be
 |[H-Index 1](src/hIndex1/Solution.java)|August 2|Medium||
 |[H-Index 1](src/hIndex2/Solution.java)|August 3|Medium|Same as H-Index 1, but the problem statement suggests a binary search; also found an interesting idea in the discussions that further improves the runtime.|
 |[Expression Add Operators](src/expressionAddOperators/OriginalSolution.java)|August 3|Hard||
-
+|[Flatten Nested List Iterator](src/flattenNestedListIterator/NestedIterator.java)|August 4|Medium||

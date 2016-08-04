@@ -152,7 +152,7 @@ public class AnotherSolution {
         tst("2147483648", Integer.MAX_VALUE);
         // These test cases show that it is necessary to check for product overflow
         // Or switch to long
-        tst("1111111111111", 539247568);
+        tst("1111111111111", 539247568); // Overflow error may produce false solution 1-111111*111111
         tst("1111111111111", 1-111111*111111);
     }
 }
