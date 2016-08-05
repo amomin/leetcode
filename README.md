@@ -28,3 +28,5 @@ These are some solutions to problems from Leetcode.  They are usually not the be
 |[Expression Add Operators](src/expressionAddOperators/OriginalSolution.java)|August 3|Hard||
 |[Flatten Nested List Iterator](src/flattenNestedListIterator/NestedIterator.java)|August 4|Medium||
 |[Coin Change](src/coinChange/Solution.java)|August 4|Medium|1 wrong submission - time limit exceeded, required a simple but crucial optimization.|
+|[Top K Frequent Elements](src/topKFrequentElements/Solution.java)|August 5|Medium|1 wrong submission - forgot to set the comparator on the priority queue!|
+|[Flatten Binary Tree to Linked List](src/flattenBinaryTreeToLinkedList/Solution.java)|August 5|Medium|Really should have been labelled easy.|
