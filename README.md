@@ -30,3 +30,4 @@ These are some solutions to problems from Leetcode.  They are usually not the be
 |[Coin Change](src/coinChange/Solution.java)|August 4|Medium|1 wrong submission - time limit exceeded, required a simple but crucial optimization.|
 |[Top K Frequent Elements](src/topKFrequentElements/Solution.java)|August 5|Medium|1 wrong submission - forgot to set the comparator on the priority queue!|
 |[Flatten Binary Tree to Linked List](src/flattenBinaryTreeToLinkedList/Solution.java)|August 5|Medium|Really should have been labelled easy.|
+|[3 Sum](src/threeSum/Solution.java)|August 6|Medium|Classic problem.|
